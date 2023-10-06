@@ -1,17 +1,22 @@
-def scriptExitCode
-def scriptOutput
-
 pipeline { 
     agent any 
     options {
         skipStagesAfterUnstable()
     }
     
+    environment {
+        build_name = 'shield-builder'
+    }
     
     stages {
-        stage('Initial'){
+        stage('Running Autobuild.py') {
             steps {
-                echo ('Did we make it here?')
+                // Always use back slash instead of foward slash to access specific repos.
+                dir("c:/Users/RLAM8/Documents/Shield Docker/shield-docker-build-master/") {
+                    // powershell ('docker shield-build -t .')
+                    powershell ('python.exe auto-build.py --force') 
+                    echo ('Finished Building!')
+                }
             }
         }
     }
