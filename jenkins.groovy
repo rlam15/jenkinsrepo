@@ -17,6 +17,7 @@ pipeline {
                 //     powershell ('python.exe auto-build.py --force') 
                 //     echo ('Finished Building!')
                 powershell ('pwd')
+                powershell ('Commit Test_01')
             }
         }
     }
