@@ -27,7 +27,7 @@ pipeline {
                 echo ('Commit Test_05')
                 echo ('Commit Test_06')
                 echo ('Commit Test_07')
-                // echo ('Commit Test_08')
+                echo ('Commit Test_08')
             }
         }
     }
