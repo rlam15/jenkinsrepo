@@ -19,6 +19,7 @@ pipeline {
                 powershell ('pwd')
                 echo ('Commit Test_01')
                 echo ('Commit Test_02')
+                echo ('Commit Test_03')
             }
         }
     }
