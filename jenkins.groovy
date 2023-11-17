@@ -17,10 +17,17 @@ pipeline {
                 //     powershell ('python.exe auto-build.py --force') 
                 //     echo ('Finished Building!')
                 powershell ('pwd')
+                //Frist Test
                 echo ('Commit Test_01')
                 echo ('Commit Test_02')
+                //Second Test
                 echo ('Commit Test_03')
                 echo ('Commit Test_04')
+                //Third Test
+                echo ('Commit Test_05')
+                // echo ('Commit Test_06')
+                // echo ('Commit Test_07')
+                // echo ('Commit Test_08')
             }
         }
     }
