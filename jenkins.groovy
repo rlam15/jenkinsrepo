@@ -20,6 +20,7 @@ pipeline {
                 echo ('Commit Test_01')
                 echo ('Commit Test_02')
                 echo ('Commit Test_03')
+                echo ('Commit Test_04')
             }
         }
     }
